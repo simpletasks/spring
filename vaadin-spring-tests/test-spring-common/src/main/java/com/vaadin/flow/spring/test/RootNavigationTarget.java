@@ -15,6 +15,7 @@
  */
 package com.vaadin.flow.spring.test;
 
+import com.vaadin.flow.theme.NoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vaadin.flow.component.AttachEvent;
@@ -24,6 +25,7 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouterLink;
 
 @Route("")
+@NoTheme
 public class RootNavigationTarget extends Div {
 
     public RootNavigationTarget(@Autowired DataBean dataBean,
